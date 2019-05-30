@@ -18,6 +18,12 @@ export default class Runnow extends Command {
     {name: 'crontabfile', description: 'crontab file to process', default: '-', required: true}
   ]
 
+  static examples = [
+    '$ jenkinscron runnow sample/crontab.txt',
+    '$ jenkinscron runnow sample/crontab.txt -e "1 minute"',
+    '$ jenkinscron runnow sample/crontab.txt -i 300 -d $(date -v-15M +%s)',
+  ]
+
   async readFromFile(input: NodeJS.ReadableStream) {
     let crontab = new Array<string>()
     return new Promise<string[]>((resolve, reject) => {
