@@ -218,8 +218,8 @@
         "signature": "17a9eaff90065146d8b4cfa7bef3ab4a74e1778339ece2f51cbd09374296b552"
       },
       "/users/qtc1195/documents/github/jenkinscron/src/commands/runnow.ts": {
-        "version": "87d45af2c217087b861b676612e1389fd8f84e41ed14d45e0efddbfd255f6de9",
-        "signature": "531fd957e8a90659741620576de8abc93744efd520df7bdd44f8f43d5d14606f"
+        "version": "18ff25b21b8998c4e32f1159a7faca9c4df4c7cb9fe46c8042f13980d1f6042f",
+        "signature": "7e2df47d7b325f596b37e95d1351775def0128c8816e201bdfe3bc4eaec06c8f"
       },
       "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/chai/index.d.ts": {
         "version": "c465afa89ac28f74167a2ee7c3c6eb8dd1245c2b3bdaa4704d58d35b932de4b7",
@@ -464,6 +464,14 @@
       "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/sinon/ts3.1/index.d.ts": {
         "version": "3fdf5e086de03fc17dd943691526d07bc4d951ec223e4685cac5f21d6533de3e",
         "signature": "3fdf5e086de03fc17dd943691526d07bc4d951ec223e4685cac5f21d6533de3e"
+      },
+      "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/through/index.d.ts": {
+        "version": "2d846db276696838aaabdc3c974419d66ab9f866d19cdc869cfb6ecff6754c01",
+        "signature": "2d846db276696838aaabdc3c974419d66ab9f866d19cdc869cfb6ecff6754c01"
+      },
+      "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/split/index.d.ts": {
+        "version": "d2be0e07f807395c706a6a84150b6fdc2c11504115035141c3e6a1e3f0b4012b",
+        "signature": "d2be0e07f807395c706a6a84150b6fdc2c11504115035141c3e6a1e3f0b4012b"
       }
     },
     "options": {
@@ -475,7 +483,6 @@
       "strict": true,
       "target": 4,
       "composite": true,
-      "project": "/Users/qtc1195/Documents/GitHub/jenkinscron/tsconfig.json",
       "configFilePath": "/Users/qtc1195/Documents/GitHub/jenkinscron/tsconfig.json"
     },
     "referencedMap": {
@@ -742,7 +749,6 @@
         "/users/qtc1195/documents/github/jenkinscron/node_modules/cron-parser/lib/index.d.ts",
         "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/node/fs.d.ts",
         "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/node/process.d.ts",
-        "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/node/stream.d.ts",
         "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/node/util.d.ts",
         "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -1235,6 +1241,18 @@
         "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/sinon/ts3.1/index.d.ts": [
+        "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/node/util.d.ts",
+        "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/through/index.d.ts": [
+        "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/node/stream.d.ts",
+        "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/node/ts3.2/index.d.ts",
+        "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/node/util.d.ts",
+        "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/split/index.d.ts": [
+        "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/through/index.d.ts",
+        "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/node/ts3.2/index.d.ts",
         "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/node/util.d.ts",
         "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/node/ts3.2/util.d.ts"
       ]
@@ -1990,6 +2008,18 @@
       "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/sinon/ts3.1/index.d.ts": [
         "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/node/util.d.ts",
         "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/through/index.d.ts": [
+        "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/node/stream.d.ts",
+        "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/node/ts3.2/index.d.ts",
+        "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/node/util.d.ts",
+        "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/split/index.d.ts": [
+        "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/through/index.d.ts",
+        "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/node/ts3.2/index.d.ts",
+        "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/node/util.d.ts",
+        "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/node/ts3.2/util.d.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
@@ -2047,7 +2077,6 @@
       "/users/qtc1195/documents/github/jenkinscron/src/index.ts",
       "/users/qtc1195/documents/github/jenkinscron/src/commands/hello.ts",
       "/users/qtc1195/documents/github/jenkinscron/node_modules/cron-parser/lib/index.d.ts",
-      "/users/qtc1195/documents/github/jenkinscron/src/commands/runnow.ts",
       "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/chai/index.d.ts",
       "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/lodash/ts3.1/common/common.d.ts",
       "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/lodash/ts3.1/common/array.d.ts",
@@ -2108,7 +2137,10 @@
       "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/node/ts3.2/globals.d.ts",
       "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/node/ts3.2/index.d.ts",
       "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/nock/index.d.ts",
-      "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/sinon/ts3.1/index.d.ts"
+      "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/sinon/ts3.1/index.d.ts",
+      "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/through/index.d.ts",
+      "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/split/index.d.ts",
+      "/users/qtc1195/documents/github/jenkinscron/src/commands/runnow.ts"
     ]
   },
   "version": "3.4.5"

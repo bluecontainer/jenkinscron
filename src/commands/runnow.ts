@@ -2,7 +2,6 @@ import {Command, flags} from '@oclif/command'
 import * as parser from 'cron-parser'
 import * as fs from 'fs'
 import * as process from 'process'
-import {Readable} from 'stream'
 
 export default class Runnow extends Command {
   static description = 'run the following commands now'
@@ -10,6 +9,8 @@ export default class Runnow extends Command {
   static flags = {
     help: flags.help({char: 'h'}),
     interval: flags.integer({char: 'i', description: 'polling interval in seconds', default: 60, required: true}),
+    exists: flags.string({char: 'e', description: 'check if the string exists in the output'}),
+    dateepoch: flags.integer({char: 'd', description: 'the date epoch to evaluate for', required: true, default: (Date.now() / 1000)}),
     verbose: flags.boolean({char: 'v', description: 'verbose output', default: false})
   }
 
@@ -39,7 +40,10 @@ export default class Runnow extends Command {
       ? (await this.readFromFile(process.stdin))
       : (await this.readFromFile(fs.createReadStream(args.crontab)))
 
-    const now = new Date()
+    const now = new Date(flags.dateepoch * 1000)
+    const options = {
+      currentDate: now
+    }
 
     for (const entry of crontab) {
       const array = entry.split(' ')
@@ -47,7 +51,7 @@ export default class Runnow extends Command {
       const command = array.slice(5,).join(' ')
       const pollInterval = flags.interval * 1000
       try {
-        const cronExpression = parser.parseExpression(cronExpressionString)
+        const cronExpression = parser.parseExpression(cronExpressionString, options)
         const next = cronExpression.next().toDate()
         const diff = Math.abs(now.valueOf() - next.valueOf())
 
@@ -60,11 +64,21 @@ export default class Runnow extends Command {
         }
 
         if (diff < pollInterval) {
-          this.log(command)
+          if (flags.exists) {
+            if (command.includes(flags.exists || '')) {
+              this.exit(0)
+            }
+          } else {
+            this.log(command)
+          }
         }
       } catch (err) {
-        this.log('Error: ' + err.message)
+        this.error(err)
       }
+    }
+
+    if (flags.exists) {
+      this.exit(1)
     }
   }
 }

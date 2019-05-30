@@ -1,7 +1,11 @@
-*/2 * * * * VENDOR=everis
-*/5 * * * * VENDOR=cdk
-*/30 * * * * VENDOR=softplanning
-0 */1 * * * VENDOR=xtime
-0 16 * * * VENDOR=abc
-30 * * * * VENDOR=123
-30 * * * 3 VENDOR=456
+*/1 * * * * every 1 minute
+*/2 * * * * every 2 minutes
+*/5 * * * * every 5 minutes
+*/10 * * * * every 10 minutes
+*/30 * * * * every 30 minutes
+0 */1 * * * on the hour every hour
+0 */2 * * * on the hour every 2 hours
+0 12 * * * 12:00 only
+0 16 * * * 16:00 only
+30 * * * * <any hour>:30
+30 * * * 4 <any hour>:30 on Thurs
