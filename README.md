@@ -28,29 +28,8 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`jenkinscron hello [FILE]`](#jenkinscron-hello-file)
 * [`jenkinscron help [COMMAND]`](#jenkinscron-help-command)
-* [`jenkinscron runnow [FILE]`](#jenkinscron-runnow-file)
-
-## `jenkinscron hello [FILE]`
-
-describe the command here
-
-```
-USAGE
-  $ jenkinscron hello [FILE]
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
-
-EXAMPLE
-  $ jenkinscron hello
-  hello world from ./src/hello.ts!
-```
-
-_See code: [src/commands/hello.ts](https://github.com/GitHub/jenkinscron/blob/v0.0.0/src/commands/hello.ts)_
+* [`jenkinscron runnow CRONTABFILE`](#jenkinscron-runnow-crontabfile)
 
 ## `jenkinscron help [COMMAND]`
 
@@ -69,18 +48,23 @@ OPTIONS
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.6/src/commands/help.ts)_
 
-## `jenkinscron runnow [FILE]`
+## `jenkinscron runnow CRONTABFILE`
 
-describe the command here
+run the following commands now
 
 ```
 USAGE
-  $ jenkinscron runnow [FILE]
+  $ jenkinscron runnow CRONTABFILE
+
+ARGUMENTS
+  CRONTABFILE  [default: -] crontab file to process
 
 OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
+  -d, --dateepoch=dateepoch  (required) [default: 1559242020.354] the date epoch to evaluate for
+  -e, --exists=exists        check if the string exists in the output
+  -h, --help                 show CLI help
+  -i, --interval=interval    (required) [default: 60] polling interval in seconds
+  -v, --verbose              verbose output
 ```
 
 _See code: [src/commands/runnow.ts](https://github.com/GitHub/jenkinscron/blob/v0.0.0/src/commands/runnow.ts)_

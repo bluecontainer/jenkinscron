@@ -209,16 +209,12 @@
         "version": "37b0cf2713d8c6a145ad7c76ceb1985af28a0261b72b93a575d5a5dd85701261",
         "signature": "04b2123e996b5c865eec449a1c670c10cee24d12b9f1a97979c0dbbceecc3384"
       },
-      "/users/qtc1195/documents/github/jenkinscron/src/commands/hello.ts": {
-        "version": "531f28c9fe75f60d9d816ee071f9af78c3957e6aa85e9b8fca8595d115c3d37a",
-        "signature": "1b98fbaf2009b4fc8b65bcb9875124b56ccdd41de683316e34d8013fd3178de3"
-      },
       "/users/qtc1195/documents/github/jenkinscron/node_modules/cron-parser/lib/index.d.ts": {
         "version": "17a9eaff90065146d8b4cfa7bef3ab4a74e1778339ece2f51cbd09374296b552",
         "signature": "17a9eaff90065146d8b4cfa7bef3ab4a74e1778339ece2f51cbd09374296b552"
       },
       "/users/qtc1195/documents/github/jenkinscron/src/commands/runnow.ts": {
-        "version": "18ff25b21b8998c4e32f1159a7faca9c4df4c7cb9fe46c8042f13980d1f6042f",
+        "version": "9a58cf80b298a8ef039a9ff2d96b6baea44cf4dee8c7733fba39fb2b618b4aa9",
         "signature": "7e2df47d7b325f596b37e95d1351775def0128c8816e201bdfe3bc4eaec06c8f"
       },
       "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/chai/index.d.ts": {
@@ -731,11 +727,6 @@
         "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "/users/qtc1195/documents/github/jenkinscron/src/index.ts": [
-        "/users/qtc1195/documents/github/jenkinscron/node_modules/@oclif/command/lib/index.d.ts",
-        "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/node/util.d.ts",
-        "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/qtc1195/documents/github/jenkinscron/src/commands/hello.ts": [
         "/users/qtc1195/documents/github/jenkinscron/node_modules/@oclif/command/lib/index.d.ts",
         "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/node/util.d.ts",
         "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/node/ts3.2/util.d.ts"
@@ -1505,10 +1496,6 @@
       "/users/qtc1195/documents/github/jenkinscron/src/index.ts": [
         "/users/qtc1195/documents/github/jenkinscron/node_modules/@oclif/command/lib/index.d.ts"
       ],
-      "/users/qtc1195/documents/github/jenkinscron/src/commands/hello.ts": [
-        "/users/qtc1195/documents/github/jenkinscron/node_modules/@oclif/parser/lib/flags.d.ts",
-        "/users/qtc1195/documents/github/jenkinscron/node_modules/@oclif/command/lib/index.d.ts"
-      ],
       "/users/qtc1195/documents/github/jenkinscron/node_modules/cron-parser/lib/index.d.ts": [
         "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/node/util.d.ts",
         "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/node/ts3.2/util.d.ts"
@@ -2075,7 +2062,6 @@
       "/users/qtc1195/documents/github/jenkinscron/node_modules/@oclif/command/lib/main.d.ts",
       "/users/qtc1195/documents/github/jenkinscron/node_modules/@oclif/command/lib/index.d.ts",
       "/users/qtc1195/documents/github/jenkinscron/src/index.ts",
-      "/users/qtc1195/documents/github/jenkinscron/src/commands/hello.ts",
       "/users/qtc1195/documents/github/jenkinscron/node_modules/cron-parser/lib/index.d.ts",
       "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/chai/index.d.ts",
       "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/lodash/ts3.1/common/common.d.ts",

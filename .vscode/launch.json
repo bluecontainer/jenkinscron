@@ -11,7 +11,8 @@
             "program": "${workspaceFolder}/bin/run",
             "args": [
               "runnow",
-              "sample/crontab.txt"
+              "sample/crontab.txt",
+              "-e 1"
             ],
             "preLaunchTask": "tsc: build - tsconfig.json",
             "outFiles": [

@@ -15,7 +15,7 @@ export default class Runnow extends Command {
   }
 
   static args = [
-    {name: 'crontab', description: 'crontab to process', default: '-', required: true}
+    {name: 'crontabfile', description: 'crontab file to process', default: '-', required: true}
   ]
 
   async readFromFile(input: NodeJS.ReadableStream) {
@@ -36,9 +36,9 @@ export default class Runnow extends Command {
   async run() {
     const {args, flags} = this.parse(Runnow)
 
-    const crontab: string[] = args.crontab === '-'
+    const crontab: string[] = args.crontabfile === '-'
       ? (await this.readFromFile(process.stdin))
-      : (await this.readFromFile(fs.createReadStream(args.crontab)))
+      : (await this.readFromFile(fs.createReadStream(args.crontabfile)))
 
     const now = new Date(flags.dateepoch * 1000)
     const options = {
@@ -66,7 +66,7 @@ export default class Runnow extends Command {
         if (diff < pollInterval) {
           if (flags.exists) {
             if (command.includes(flags.exists || '')) {
-              this.exit(0)
+              return
             }
           } else {
             this.log(command)
