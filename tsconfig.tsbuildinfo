@@ -2063,6 +2063,7 @@
       "/users/qtc1195/documents/github/jenkinscron/node_modules/@oclif/command/lib/index.d.ts",
       "/users/qtc1195/documents/github/jenkinscron/src/index.ts",
       "/users/qtc1195/documents/github/jenkinscron/node_modules/cron-parser/lib/index.d.ts",
+      "/users/qtc1195/documents/github/jenkinscron/src/commands/runnow.ts",
       "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/chai/index.d.ts",
       "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/lodash/ts3.1/common/common.d.ts",
       "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/lodash/ts3.1/common/array.d.ts",
@@ -2125,8 +2126,7 @@
       "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/nock/index.d.ts",
       "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/sinon/ts3.1/index.d.ts",
       "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/through/index.d.ts",
-      "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/split/index.d.ts",
-      "/users/qtc1195/documents/github/jenkinscron/src/commands/runnow.ts"
+      "/users/qtc1195/documents/github/jenkinscron/node_modules/@types/split/index.d.ts"
     ]
   },
   "version": "3.4.5"
